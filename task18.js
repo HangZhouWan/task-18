@@ -27,7 +27,7 @@ function diplayList(){
 
 function Unshift(){
 	var input = document.getElementById("input").value;
-	if(input!==""){
+	if(typeof(input.number()) =="number"){
 	list.unshift(input);
 	}
 	document.getElementById("input").value = "";
@@ -35,7 +35,7 @@ function Unshift(){
 }
 function Push(){
 	var input = document.getElementById("input").value;
-	if(input!==""){
+	if(typeof(input.number()) =="number"){
 	list.push(input);
 	}
 	document.getElementById("input").value = "";
